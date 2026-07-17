@@ -29,3 +29,9 @@ body {
   padding: 8px;
   font-size: 14px;
 }
+
+#convert-btn {
+  padding: 8px;
+  font-size: 14px;
+  width: 30%;
+}
