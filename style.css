@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Asta+Sans:300,regular,500,600,700,800);
+
 body {
   display: flex;
   justify-content: center;
@@ -27,6 +29,7 @@ body {
   margin-bottom: 1rem;
   padding: 0px 5px;
   background-color: beige;
+  font-style: "astra sans", cursive;
 }
 
 #number {
