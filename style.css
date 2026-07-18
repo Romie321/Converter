@@ -5,6 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   background-image: url(https://tse1.mm.bing.net/th/id/OIP.A7boeuW5HUkiMAvmPyt1ZAHaEJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+  background-size: cover;
 }
 
 #container {
