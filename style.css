@@ -26,6 +26,7 @@ body {
   align-items: center;
   margin-bottom: 1rem;
   padding: 0px 5px;
+  background-color: beige;
 }
 
 #number {
