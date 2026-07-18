@@ -1,5 +1,6 @@
 const numInput = document.getElementById(number);
 const numconvert = document.getElementById(convert - btn);
+const numOutput = document.getElementById(output);
 
 function convertToRoman(num) {
   let numerals = {
