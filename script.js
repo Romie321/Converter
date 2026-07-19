@@ -27,9 +27,9 @@ function convertToRoman(numInput) {
 
   for (let i = 0; i < numKeys.length; i++) {
     let key = numKeys[i];
-    while (key <= num) {
+    while (key <= numInput) {
       romanNum += numerals[key];
-      num -= key;
+      numInput -= key;
     }
   }
   return romanNum;
