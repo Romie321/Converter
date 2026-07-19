@@ -1,9 +1,17 @@
-let numInput = document.getElementById(number);
-let numConvert = document.getElementById(convert);
-let numOutput = document.getElementById(output);
-let copyBtn = document.getElementById(copy);
+let numInput = document.getElementById("number");
+let numConvert = document.getElementById("convert");
+let numOutput = document.getElementById("output");
+let copyBtn = document.getElementById("copy");
+let statusMsg = document.getElementById("status");
 
-function convertToRoman(numInput) {
+function convertToRoman(inputValue) {
+  const inputNumber = Number(inputValue);
+
+  if (!Number.isInteger(inputNumber) || inputNumber <= 0) {
+    numOutput.textContent = "Please enter a valid positive integer";
+    return;
+  }
+
   let numerals = {
     1000: "M",
     900: "CM",
@@ -24,29 +32,35 @@ function convertToRoman(numInput) {
   let numKeys = Object.keys(numerals)
     .map(Number)
     .sort((a, b) => b - a);
+  let remainingValue = inputNumber;
 
   for (let i = 0; i < numKeys.length; i++) {
     let key = numKeys[i];
-    while (key <= numInput) {
+    while (key <= remainingValue) {
       romanNum += numerals[key];
-      numInput -= key;
+      remainingValue -= key;
     }
   }
-  numOutput.innerHTML = romanNum;
+
+  numOutput.textContent = romanNum;
 }
 
-//console.log(convertToRoman(36));
-
-numConvert.addEventListener("click", convertToRoman());
+numConvert.addEventListener("click", () => {
+  convertToRoman(numInput.value);
+});
 
 copyBtn.addEventListener("click", async () => {
   try {
-    await navigator.clipboard.writeText(numOutput.value);
-    statusMsg.textContent = "Copied to clipboard!";
-    statusMsg.style.color = "green";
+    await navigator.clipboard.writeText(numOutput.textContent);
+    if (statusMsg) {
+      statusMsg.textContent = "Copied to clipboard!";
+      statusMsg.style.color = "green";
+    }
   } catch (err) {
     console.error("Failed to copy: ", err);
-    statusMsg.textContent = "Failed to copy.";
-    statusMsg.style.color = "red";
+    if (statusMsg) {
+      statusMsg.textContent = "Failed to copy.";
+      statusMsg.style.color = "red";
+    }
   }
 });
