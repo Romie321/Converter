@@ -16,9 +16,10 @@ body {
   align-items: center;
   flex-direction: column;
   border-style: outset;
-  padding-top: 20px;
-  padding-bottom: 100px;
+  /*padding-top: 20px;
+  padding-bottom: 100px;*/
   background-color: rgb(186, 178, 178);
+  height: 35vh;
 }
 
 #title {
@@ -32,7 +33,14 @@ body {
   font-style: "astra sans", cursive;
 }
 
-.sec-container {
+#sec-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#third-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,16 +59,16 @@ body {
 }
 
 .copy-btn {
-  background-color: #4caf50; /* Green background */
-  color: white; /* White text */
-  border: none; /* Remove borders */
-  padding: 10px 20px; /* Padding */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer on hover */
-  border-radius: 5px; /* Rounded corners */
-  display: flex; /* Align icon and text */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
   align-items: center;
-  gap: 8px; /* Space between icon and text */
+  gap: 8px;
 }
 
 .copy-btn:hover {
