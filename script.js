@@ -32,14 +32,12 @@ function convertToRoman(numInput) {
       numInput -= key;
     }
   }
-  return romanNum;
+  numOutput.innerHTML = romanNum;
 }
 
 //console.log(convertToRoman(36));
 
-numConvert.addEventListener("click", (e) => {
-  numOutput.innerHTML = convertToRoman();
-});
+numConvert.addEventListener("click", convertToRoman);
 
 copyBtn.addEventListener("click", async () => {
   try {
