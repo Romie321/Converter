@@ -55,7 +55,7 @@ body {
   font-size: 14px;
 }
 
-#convert-btn {
+#convert {
   padding: 8px;
   font-size: 14px;
   width: 30%;
@@ -69,7 +69,7 @@ body {
   height: 2vh;
 }
 
-#copy-btn {
+#copy {
   background-color: #4caf50;
   color: white;
   border: none;
@@ -82,6 +82,6 @@ body {
   gap: 8px;
 }
 
-#copy-btn:hover {
+#copy:hover {
   background-color: #45a049;
 }
