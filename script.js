@@ -1,7 +1,7 @@
-const numInput = document.getElementById(number);
-const numConvert = document.getElementById(convert - btn);
-const numOutput = document.getElementById(output);
-const copyBtn = document.getElementById(copy - btn);
+let numInput = document.getElementById(number);
+let numConvert = document.getElementById(convert - btn);
+let numOutput = document.getElementById(output);
+let copyBtn = document.getElementById(copy - btn);
 
 function convertToRoman(numInput) {
   let numerals = {
@@ -38,7 +38,7 @@ function convertToRoman(numInput) {
 //console.log(convertToRoman(36));
 
 numConvert.addEventListener("click", (e) => {
-  numOutput.innerHTML = convertToRoman;
+  numOutput.innerHTML = convertToRoman();
 });
 
 copyBtn.addEventListener("click", async () => {
