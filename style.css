@@ -62,3 +62,7 @@ body {
   align-items: center;
   gap: 8px; /* Space between icon and text */
 }
+
+.copy-btn:hover {
+  background-color: #45a049;
+}
