@@ -36,3 +36,15 @@ function convertToRoman(num) {
 }
 
 //console.log(convertToRoman(36));
+
+copyBtn.addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(numOutput.value);
+    statusMsg.textContent = "Copied to clipboard!";
+    statusMsg.style.color = "green";
+  } catch (err) {
+    console.error("Failed to copy: ", err);
+    statusMsg.textContent = "Failed to copy.";
+    statusMsg.style.color = "red";
+  }
+});
