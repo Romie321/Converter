@@ -3,7 +3,7 @@ const numconvert = document.getElementById(convert - btn);
 const numOutput = document.getElementById(output);
 const copyBtn = document.getElementById(copy - btn);
 
-function convertToRoman(num) {
+function convertToRoman(numInput) {
   let numerals = {
     1000: "M",
     900: "CM",
