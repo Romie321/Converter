@@ -43,3 +43,16 @@ body {
   font-size: 14px;
   width: 30%;
 }
+
+.copy-btn {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove borders */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer on hover */
+  border-radius: 5px; /* Rounded corners */
+  display: flex; /* Align icon and text */
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+}
