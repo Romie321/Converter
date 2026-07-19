@@ -32,7 +32,7 @@ function convertToRoman(numInput) {
       num -= key;
     }
   }
-  output.innerhtml = romanNum;
+  return (numOutput.innerhtml = romanNum);
 }
 
 //console.log(convertToRoman(36));
