@@ -1,44 +1,52 @@
 # 🔢 Roman Numeral Converter
-A JavaScript project built for the FreeCodeCamp JavaScript Algorithms and Data Structures Certification. This converter transforms numbers into their corresponding Roman numeral representations using clean, test‑driven logic.
+A clean, test‑driven JavaScript implementation that converts numbers into their proper Roman numeral form. Built as part of the FreeCodeCamp JavaScript Algorithms and Data Structures Certification, this project focuses on clarity, correctness, and algorithmic thinking.
 
 ## 🧠 What This Project Does
-- Converts integers into Roman numerals
+- Converts integers into accurate Roman numeral representations
 
-- Handles all required values from 1 to 3999
+- Supports the full required range: 1–3999
 
-- Uses structured logic to build numerals from largest to smallest
+- Uses a structured, step‑by‑step algorithm that builds numerals from largest to smallest
 
-- Passes all FreeCodeCamp test requirements for the Roman Numeral Converter project
+- Passes all FreeCodeCamp Roman Numeral Converter tests
+
+- Includes improved variable handling, error messaging, and output formatting
 
 ## 🛠️ Tech Used
-- JavaScript — full implementation of the conversion logic
+- JavaScript — conversion logic, validation, and algorithm
 
-## 📂 Files in This Repo
-- script.js — main Roman numeral conversion algorithm
+- HTML/CSS — simple UI for entering numbers and viewing results
+
+## 📂 Project Structure
+- index.html — UI layout
+
+- style.css — styling and output container improvements
+
+- script.js — main conversion logic and error handling
 
 - README.md — project documentation
 
 - LICENSE — MIT License
 
-## 🎯 Purpose of This Project
-This project helped me practice:
-
+## 🎯 What I Practiced
 - Implementing classic algorithms in JavaScript
 
-- Breaking down problems into smaller logical steps
+- Breaking down problems into small, logical steps
 
 - Working with arrays, loops, and conditionals
 
-- Strengthening problem‑solving skills for algorithmic challenges
+- Strengthening problem‑solving skills
 
-## 🚀 Future Improvements (Optional)
-- Add a UI to input numbers and display Roman numerals
+Improving UI clarity and user feedback
+
+## 🚀 Future Improvements
+- Add Jest unit tests
+
+- Expand UI with history of conversions
 
 - Add validation for out‑of‑range values
 
-- Add unit tests using Jest
-
-- Add examples of number → numeral conversions
+- Provide examples of number → numeral conversions
 
 ## 📜 License
 This project is licensed under the MIT License.
